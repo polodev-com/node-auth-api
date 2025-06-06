@@ -25,6 +25,7 @@ app.get('/', (req, res) => {
         message: 'Auth API is running successfully!',
         status: 'OK',
         timestamp: new Date().toISOString(),
+        env: process.env.NODE_ENV,
         documentation: '/api-docs' // Placeholder for API documentation link
     });
 });
